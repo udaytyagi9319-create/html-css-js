@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS-Grid_ultimate_masterclass_2</title>
+                    <style>
+                                        *{
+                                                            margin:0;
+                                                            padding: 0;
+                                                            box-sizing: border-box;
+
+                                        }
+                                        .container{
+                                                            border:2px solid red;
+                                                            display:grid;
+                                                            height: 600px;
+                                                            row-gap: 20px;/* == isse ham apne grid ke andar ke items ke beech me gap create kar sakte hai. */
+                                                            column-gap: 5px;
+                                                            /*grid-template-columns: 100px 200px 100px;*//* == isse ham apne grid ke andar ke items ke beech me gap create kar sakte hai. */
+                                                            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+                                                            /* grid-template-columns: repeat(4, 100px); */
+                                                            /* grid-template-columns: 200px 200px; */
+                                                            /* grid-template-rows: 200px 200px; *//*ise in box ki height bahde jati hai...*/
+                                                            /*grid-auto-rows: 150px;*//*ise ham baki ke box ko height dete hai*/
+                                                            /* justify-content: center; *//*ise ham move kar sakte hai content ko or center se left or right se center aa jyga ye */
+                                                            /*align-content: center;/*ise ham move kar sakte hai content ko or center se top or bottom se center aa jyga ye */
+                                                            /*align-items: center;/*ise ham apne grid ke andar ke items ko vertically center kar sakte hai. */
+                                                            grid-template-areas:"hr hr hr hr"
+                                                                                "sbr main main main" 
+                                                                                "sbr main main main"
+                                                                                "ftr ftr ftr ftr";/*isme ham area define kar sakte hai*/
+
+                                        }
+                                        .box{
+                                                            border:2px solid green;
+                                                            padding:12px;
+                                        }
+                                        #box-1{
+                                                            background: rgb(167, 238, 167);
+                                                            grid-area:hr
+                                        }
+                                        #box-2{
+                                                            background: #ef6565;
+                                                            grid-area: sbr;
+                                        }
+                                        #box-3{
+                                                            background: rgb(15, 186, 224);
+                                                            grid-area:main;
+
+                                        }
+                                       
+
+                                        
+                                        #box-4{
+                                                            background: rgb(146, 163, 69);
+                                                            grid-area:ftr;
+                                                            
+                                                            /*justify-self: center;/*ise ham apne grid ke andar ke items ko vertically left side me kar sakte hai. */
+                                                            /*align-self: center;/*ise ham apne grid ke andar ke items ko vertically center kar sakte hai. */
+                                                            /* grid-column-start:1; */
+                                                            /* grid-column-end:3; */
+                                                            /*grid-column: 1/ -1;/*isme ham apne grid ke ander ke item ko 1st column se start kar ke 3rd column pe end karwa sakte hai. */
+                                                            /*grid-row:1/ span 4;/*isme ham apne grid ke ander ke item ko 2nd row se start kar ke 10th row pe end karwa sakte hai.*/
+                                                            /*grid-area:2/2/3/4;/*isme ham apne grid ke ander ke item ke row-start and column-start ko dono ek sath kar sakte hai.*/
+
+                                        }
+                    </style>
+</head>
+<body>
+                    <div class="container">
+                                        <div class="box" id="box-1">box-1</div>
+                                        <div class="box" id="box-2">box-2</div>
+                                        <div class="box" id="box-3">box-3</div>
+                                        <div class="box" id="box-4">box-4</div>
+                                      
+                    </div>
+
+                  
+</body>
+</html>

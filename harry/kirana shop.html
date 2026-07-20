@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIRANA SHOP</title>
+    
+    <style>
+        /* General Styling and Reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7; /* Light background */
+            color: #333;
+        }
+
+        /* Container to center content and set max width */
+        header, main, footer {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+        
+        /* Remove extra closing div */
+        body > div:last-child {
+            display: none;
+        }
+
+        /* --- Header & Navigation Styling --- */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            border-bottom: 3px solid #4CAF50; /* Green border for shop feel */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4CAF50; /* Main Shop Color */
+            font-size: 2.5em;
+            text-align: center;
+            margin: 0 0 10px 0;
+        }
+
+        /* Navigation List (HOME, ABOUT, CONTACT) */
+        header ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            background-color: #333;
+            padding: 10px 0;
+            border-radius: 5px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        header ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Search Bar Styling */
+        header input[type="text"] {
+            padding: 8px 15px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin: 10px auto;
+            display: block;
+            outline: none;
+        }
+
+        /* --- Main Content (Products) Styling --- */
+        main {
+            padding: 30px 0;
+            display: flex; /* Flexbox for product arrangement */
+            flex-wrap: wrap; /* Allows products to wrap */
+            justify-content: space-between; /* Space out product cards */
+        }
+
+        /* Individual Product Card Container */
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            width: 48%; /* Two products per row (approx) */
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .product-card img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .product-card img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Buttons and Selectors */
+        input[type="button"] {
+            background-color: #FF9800; /* Orange for action buttons */
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        input[value="BUY"] {
+            background-color: #4CAF50; /* Green for BUY */
+        }
+
+        input[type="button"]:hover {
+            background-color: #f57c00;
+        }
+
+        input[value="BUY"]:hover {
+            background-color: #388e3c;
+        }
+
+        select {
+            padding: 8px;
+            margin: 10px 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Radio buttons and labels */
+        .product-card label {
+            font-weight: bold;
+            color: #666;
+            margin-right: 5px;
+        }
+
+        /* Product Description Paragraphs */
+        .product-card p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            margin-top: 15px;
+            color: #555;
+            padding: 10px 0;
+            border-top: 1px dotted #eee;
+            text-align: left;
+        }
+
+        /* --- Footer Styling --- */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-top: 5px solid #4CAF50;
+        }
+
+        footer big {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        footer small {
+            display: block;
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        footer textarea {
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+        }
+
+        footer ul {
+            list-style: disc;
+            padding: 0;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 0.85em;
+            display: inline-block; /* Center the list itself */
+        }
+
+        footer ul li {
+            padding: 5px 0;
+            border-bottom: 1px dotted #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="border-bottom: 1px solid #ccc;">KIRANA SHOP</h1>
+
+        <ul>
+            <li><a href="shop.html">HOME</a></li>
+            <li><a href="sub.html">ABOUT</a></li>
+            <li><a href="tel:9045330098">CONTACT</a></li>
+        </ul>
+        <hr>
+        
+        <div style="text-align: center;">
+             <label for="search" style="display:none;"></label>
+             <input type="text" id="search" placeholder="Search products...">
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <div class="product-card">
+            <img src="dal.jpg.png" width="121" alt="Dal Image">
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="dal_price" id="dal_price">
+                <option value="price">PRICE/QUANTITY</option>
+                <option value="5ors">50₹ = 100g</option>
+                <option value="100rs">100₹ = 200g</option>
+                <option value="150rs">150₹ = 300g</option>
+                <option value="200rs">200₹ = 500g</option>
+                <option value="250rs">250₹ = 1kg</option>
+            </select>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi autem possimus quos animi sapiente illo, voluptatem quasi vero modi quia.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="chips.png" width="121" alt="Chips Image">
+            <br>
+            <label for="chips_red">COLOUR</label>
+            <input type="radio" id="chips_red" name="chips_color" value="red">RED
+            <input type="radio" id="chips_green" name="chips_color" value="green">GREEN
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="chips_price" id="chips_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                <option value="10rs">10₹</option>
+                </select>
+            <select name="chips_quantity" id="chips_quantity">
+                <option value="QUANTITY">QUANTITY</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta voluptatem error velit, saepe ab doloremque nostrum dolore pariatur voluptate itaque.</p>
+        </div>
+        
+        <div class="product-card">
+            <img src="pencli.png" width="121" alt="Pencil Image">
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="pencil_price" id="pencil_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                </select>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quae neque odio quas sint ipsam quam ullam porro molestias nam atque officiis aliquam alias nisi numquam minima, hic culpa autem.</p>
+        </div>
+        
+        <div class="product-card">
+            <img src="bcci.jpg.png" width="121" alt="BCCI Item Image">
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="bcci_price" id="bcci_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                 </select>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus fuga voluptatem non. Rerum ratione ea, eos magni, ad nisi obcaecati totam voluptas, natus facere sit doloribus excepturi cum modi.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="book.png" width="121" alt="Book Image">
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="book_price" id="book_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                 </select>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, in vel possimus vitae dolor sequi ipsa nobis? Exercitationem ab, esse quas temporibus non, beatae obcaecati quibusdam aliquid, cupiditate quidem eveniet.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="pen.jpg" width="121" alt="Pen Image">
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="pen_price" id="pen_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                 </select>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quasi suscipit autem, odit consequuntur quo dicta consectetur veniam officiis nesciunt cum omnis cumque voluptate aliquid ipsam? Voluptates porro cupiditate unde.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="code.jpg" width="121" alt="Code Item Image">
+            <br>
+            <input type="button" value="ADD CART">
+            <input type="button" value="BUY">
+            <br>
+            <select name="code_price" id="code_price">
+                <option value="price">PRICE</option>
+                <option value="5rs">5₹</option>
+                 </select>
+        </div>
+        
+    </main>
+    <hr>
+    <footer>
+        <big>KIRANA SHOP</big>
+        <small>with filpkart</small>
+        <br>
+        <br>
+        <label for="feedback">Comment/Feedback</label>
+        <textarea name="feedback" id="feedback" cols="15" rows="05">feedback...</textarea>
+
+        <ul>
+            <li>Terms and Conditions apply.</li>
+            <li>Easy returns and exchange.</li>
+            <li>24/7 Customer Support available.</li>
+            <li>Shop locally, support small business.</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS specificity</title>
+                    <style>
+                                        h1 {
+                                                            color: blue;
+                                        }
+
+                                        .yellow {
+                                                            color: yellow;
+                                                            background-color: red;
+                                        }
+
+                                        .purple {
+                                                            color: purple;
+                                        }
+
+                                        .red {
+                                                            color: red;
+                                        }
+
+                                        [data-x=a] {
+                                                            color: green;
+                                        }
+                    </style>
+</head>
+
+<body>
+                    <div>
+                                        <h1 class="red  purple yellow " data-x="a">Hello world </h1>
+                    </div>
+</body>
+
+</html>

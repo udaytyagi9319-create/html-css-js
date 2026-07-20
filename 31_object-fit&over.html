@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS object-fit & object-cover</title>
+                    <style>
+                                        .container{
+                                                            height:490px;
+                                                            width: 470px;
+                                                            border: 2px solid black;
+                                                            /* background-color: azure; */
+                                                            background-image: url(harry/mumbi.webp);
+                                                            background-position:center center ;
+                                        }
+                                        img{
+                                                            width: 470px;
+                                                            height: 490px;
+                                                            object-fit:cover;/*ye pure box ko cover to karte hai lekin image ko cut ho jata hai*/
+                                                            /*object-fit: contain;/*isme side me jagha bachti hai*/
+                                                            object-position: bottom ;/*ye image ko niche se show karega*/
+                                                            object-fit: fill;/*ye image ko pura box me fit kar dega lekin image stretch ho jayega*/;
+                                                            /* object-fit: scale-down;ise ham img ko niche kar sakte hai  */
+                                                            object-position: 40px 30px ;/*ye image ko 40px right aur 30px down karega*/
+
+
+                                        }
+                                        
+
+                    </style>
+</head>
+<body>
+                    <div class="container">
+                                        <!-- <img src="harry/mumbi.webp" alt="Hill image"> -->
+                    </div>
+</body>
+</html>

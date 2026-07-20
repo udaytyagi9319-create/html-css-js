@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS display property</title>
+                    <style>
+                                        *{
+                                                            margin: 0px;
+                                                            padding: 0px;
+                                        }
+                          .box{
+                                        border: 2px solid black ;
+                                        display:inline-block;
+                                        margin:45px;
+                                        padding:50px;
+
+
+                          }              
+                          .box_1{
+                                      border: 2px solid black;
+                                      display: inline;
+                                      visibility: hidden;
+
+
+                          }
+                    </style>
+</head>
+<body>
+                <div class="box">I am a box</div>    
+                 <div class="box_1"> I am a another box </div> <!-- ye ek blockelement hota isliye ya dusre div ke sath judta nhi  -->
+                 <span>I am a span,</span><!--ye ek inline element hota hai isliye ye do span ko aps me jod deta hai -->
+                 <span>I am a another span</span>
+
+</body>
+</html>

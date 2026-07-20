@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+                    <style>
+                                        .container {
+                                                            height: 300px;
+                                                            width: 300px;
+                                                            background: grey;
+                                                            margin: 100px;
+                                                            color:white
+                                                            /* position: relative; */
+                                                            
+                                        }
+
+                                        .box {
+                                                            width: 100px;
+                                                            height: 100px;
+                                        }
+
+                                        .red {
+                                                            position: relative;
+                                                            background: red;
+                                                            top: 100px;
+                                                            right: 100px;
+                                                            left: 100px;
+                                                            color: white;
+                                                            text-align: center;
+
+                                        }
+
+                                        .green {
+                                                            background: green;
+                                                            position: absolute;
+                                                            top: 0px;
+                                                            left: 0px;
+                                                            color: white;
+                                                            text-align: center;
+                                        }
+
+                                        .yellow {
+                                                            background: yellow;
+                                                            position: fixed;
+                                                            bottom: 0px;
+                                                            right: 0px;
+                                                            color:black;
+                                                            text-align: center;
+                                        }
+
+                                        .spacer {
+                                                            height: 300vw;
+                                        }
+
+                                        .purple {
+                                                            background: purple;
+                                                            position: sticky;
+                                                            top: 50px;
+                                                            color: white;
+                                                            text-align: center;
+
+
+                                        }
+                    </style>
+</head>
+
+<body>
+                    <div class="container">Container
+                                        <div class="box red ">Relative</div>
+                                        <div class="box green">Absolute</div>
+                                        <div class="box yellow">Fixed</div>
+                                        <div class="box purple">Sticky</div>
+                    </div>
+</body>
+<div class="spacer"></div>
+
+</html>

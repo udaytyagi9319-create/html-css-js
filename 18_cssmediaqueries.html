@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>cssmediaqueries</title>
+                    <style>
+                                        body{
+                                                            background-color: red;
+                                        }
+                                        @media screen and (orientation:landscape) {
+                                                            body{
+                                                                                border: 4px solid black;
+                                                            }
+                                                            
+                                        }
+                                        @media only screen and (max-width:500px){
+                                                            body{
+                                                                                background: greenyellow;
+                                                            }
+                                                            .boxes{
+                                                                                flex-direction: column;
+                                                            }
+                                                            .boxes{
+                                                                                display: flex;
+                                                            }
+                                                            .box{
+                                                                                width: 255px;
+                                                                                height: 255px;
+                                                                                background: yellow;
+                                                                                padding: 2px;
+                                                                                margin: 2px;
+                                                            }
+                                        }
+                    </style>
+</head>
+<body>
+                    <div>
+
+                                        Hii guys          
+                                        <div class="boxes">
+                                                            <div class="box"></div>
+                                                            <div class="box"></div>
+                                                            <div class="box"></div>
+                                                            <div class="box"></div>
+                                        </div>
+                    </div>
+</body>
+</html>

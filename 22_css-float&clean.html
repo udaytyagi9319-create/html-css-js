@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>CSS-Float_clear</title>
+      <style>
+            .cards {
+                  border: 2px solid black;
+                  display: flow-root;
+                  /*isme overflow khatam kardete hai,jaise img ka ka overflow ko khtam kiya gyaa hai.*/
+            }
+
+            img {
+                  float: left;
+            }
+
+            .card {
+                  border: 2px solid red;
+            }
+
+            .card:nth-child(3) {
+                  background: red;
+                  /* clear:left;/*isme ye khate hai ki agr koi img ya aise element iski jagah lega to is property ko dalne se vo uski jagah chod dega.to isko iski puri jagah mil jayegi. */
+                  clear: both;
+                  /*isme kahta hai ki dono or  se hat jata hai. */
+            }
+      </style>
+</head>
+
+<body>
+      <div class="cards">
+            <img src="https://wallpapers.com/images/featured-full/720p-nature-background-te0eo4yinuw49nh1.jpg"
+                  width="250px" alt="wonderfull image">
+            <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto accusantium aut minus
+                  aperiam quam. Impedit facilis dicta ea ipsum, quaerat aliquam recusandae alias expedita repudiandae!
+                  Sapiente rem pariatur iste laboriosam laudantium sed repudiandae aliquid quis optio ad dolore nesciunt
+                  minus libero officiis, blanditiis corrupti quidem aut tempore ipsum iusto molestias?
+            </div>
+            <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ullam iusto, expedita
+                  nesciunt harum explicabo ex, saepe, voluptatibus reprehenderit tempora fuga iste vel voluptas! Tenetur
+                  ducimus officia omnis atque excepturi ad qui consequuntur, nesciunt dolores, saepe praesentium,
+                  aliquam dolore quasi quibusdam est fugiat voluptate debitis ex veritatis illum quaerat nostrum quis.
+                  Error nulla atque unde pariatur debitis reprehenderit impedit quae! Quo, tempora vel? Quaerat
+                  repudiandae incidunt consequuntur rem. Officia quasi dicta eum tempore excepturi delectus nobis
+                  dolore, in nemo, laboriosam tenetur itaque facilis fugiat expedita, corrupti natus neque? Dolore
+                  similique voluptatum assumenda in dignissimos! Deleniti, optio obcaecati! Alias dolores modi a quam
+                  exercitationem autem provident vitae optio perferendis, doloribus repellat eius odio distinctio
+                  placeat voluptates animi quia nulla repellendus dicta laudantium corrupti minima voluptas vel itaque!
+                  Quae libero assumenda eos, numquam ipsam vitae quibusdam modi accusamus velit ad delectus nostrum ex
+                  alias eligendi officiis? Possimus nulla cumque eius consequuntur quasi recusandae sequi voluptas
+                  quaerat laborum, repellat quae cum, iste dignissimos facere delectus quo ex! Animi mollitia corrupti
+                  sed ipsum officiis eum temporibus eveniet modi totam tempora aperiam, nulla expedita saepe dolores
+                  tempore veniam? Tempore, consequuntur. Omnis modi illo reprehenderit veritatis nihil provident
+                  distinctio reiciendis id accusantium, saepe ipsum ratione debitis exercitationem quae? Assumenda optio
+                  eos, provident, obcaecati nobis tempore quidem facere quam consectetur placeat odio eius saepe itaque
+                  cupiditate ab voluptates totam! Quo ut dolore consectetur tempora temporibus vero non accusamus, et
+                  similique suscipit optio eaque assumenda quos deleniti harum porro aut perferendis voluptatum qui iure
+                  omnis nesciunt dolor. Officia, minus aliquam dolores vitae in reiciendis nemo voluptate dolor id, unde
+                  aperiam modi dicta nostrum totam, eum accusamus dolore. Animi sit voluptates odit amet, dignissimos
+                  sapiente modi, suscipit quas inventore aliquam illo dolorum at voluptatem quam minus similique laborum
+                  ducimus officiis doloribus doloremque aperiam? Soluta debitis facere dicta tempore architecto.</div>
+            <div class="card">card3</div>
+      </div>
+</body>
+
+</html>

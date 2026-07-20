@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS Animations</title>
+                    <style>
+                                        .container{
+                                                            background-color: rgb(3, 71, 24);
+                                                            height:80vh;
+                                                            width:30vw;
+                                        }
+                                        .box{
+                                                            background-color: #ddff02;
+                                                             height:45px;
+                                                            width:35px;
+                                                            /* animation-name: animation;
+                                                            animation-duration:3s;
+                                                            animation-iteration-count: 2;
+                                                            animation-timing-function:ease-in-out;
+                                                            animation-delay:2s;
+                                                            animation-direction: alternate-reverse;
+                                                            animation-play-state: paused; */
+                                                            animation:udit 3s ease-in-out 2s 1, tyagi 3s ease-in-out 2s 1  ;
+
+
+                                        }
+                                        @keyframes udit {
+                                                            from{
+                                                                                background-color: crimson;
+
+
+                                                            }
+                                                            to{
+                                                                                background-color: rgb(0, 255, 4);
+                                                                                transform:translateX(1000px);
+
+                                                            }
+
+                                                            
+                                        }
+                                        @keyframes tyagi {
+                                                            0%{transform: rotate(100deg);} 
+                                                            20%{transform: rotate(200deg);} 
+                                                            50%{transform: rotate(220deg);} 
+                                                            80%{transform: rotate(300deg);} 
+                                                            100%{transform: rotate(310deg);} 
+                                                            
+                                        }
+
+                    </style>
+</head>
+<body>
+                    <div class="container">
+                                        <div class="box">BOX</div>
+                    </div>
+</body>
+</html>

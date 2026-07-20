@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone Layout</title>
+    
+    <style>
+        /* Global Styles and Reset */
+        body {
+            font-family: Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f6;
+        }
+
+        /* 1. Navbar Styling (Blue Header) */
+        .navbar {
+            background-color: #2874F0;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            font-style: italic;
+            margin-right: 25px;
+            cursor: pointer;
+        }
+
+        /* Search Bar Styling */
+        .search-container {
+            width: 35%;
+            position: relative;
+            background-color: white;
+            border-radius: 2px;
+        }
+
+        .search-container input {
+            width: 90%;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+            border-radius: 2px;
+        }
+
+        /* Nav Links Styling */
+        .nav-links {
+            margin-left: 50px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* 2. Category Strip Styling */
+        .category-strip {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        .category-item {
+            text-align: center;
+            padding: 0 20px;
+            font-size: 14px;
+            cursor: pointer;
+            font-weight: 500;
+            color: #333;
+            transition: color 0.2s;
+        }
+
+        .category-item:hover {
+            color: #2874F0;
+        }
+
+        /* 3. Main Content / Product Grid Styling */
+        .product-grid-container {
+            width: 95%;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-grid-container h2 {
+            font-weight: 500;
+            color: #333;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding-top: 15px;
+        }
+
+        .product-card {
+            width: 22%;
+            padding: 15px 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+            border: 1px solid #eee;
+            border-radius: 2px;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-size: 14px;
+            font-weight: 400;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .product-price {
+            font-size: 16px;
+            font-weight: 600;
+            color: #388e3c;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Flipkart</div>
+        <div class="search-container">
+            <input type="text" placeholder="Search for products, brands and more">
+        </div>
+        <nav class="nav-links">
+            <a href="#">Login</a>
+            <a href="#">Become a Seller</a>
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+
+    <section class="category-strip">
+        <div class="category-item">Electronics</div>
+        <div class="category-item">Fashion</div>
+        <div class="category-item">Home & Furniture</div>
+        <div class="category-item">Appliances</div>
+        <div class="category-item">Travel</div>
+    </section>
+
+    <main class="product-grid-container">
+        <h2>Deals of the Day</h2>
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <img src="https://picsum.photos/id/237/150/150" alt="Product Image A">
+                <p class="product-name">Product A</p>
+                <p class="product-price">₹499</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://picsum.photos/id/250/150/150" alt="Product Image B">
+                <p class="product-name">Product B</p>
+                <p class="product-price">₹999</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://picsum.photos/id/292/150/150" alt="Product Image C">
+                <p class="product-name">Product C</p>
+                <p class="product-price">₹1,499</p>
+            </div>
+            
+            <div class="product-card">
+                <img src="https://picsum.photos/id/238/150/150" alt="Product Image D">
+                <p class="product-name">Product D</p>
+                <p class="product-price">₹299</p>
+            </div>
+            
+        </div>
+    </main>
+    
+</body>
+</html>

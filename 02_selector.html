@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS selectors</title>
+                    <style>
+                                        /* Element selector */
+                                        div{
+                                                            background: yellow;
+                                        }
+                                        /* class selector */
+                                        .red{
+                                                            background-color: red;
+                                        }
+                                        /* id selector */
+                                        #green{
+                                                            background: greenyellow;
+                                        }
+                                        /* child selector */
+                                         div > p{
+                                                               background-color: blue; 
+                                                               color: whitesmoke;
+                                        } 
+                                               /* descendant selector */
+                                         div p{
+                                                               background-color:yellow;
+                                                               color:rgb(238, 10, 10);
+                                        }
+                                        /* universal selector */
+                                        *{
+                                                            border: 1px solid black;
+                                                            margin: 0px;
+                                                            padding:0px
+                                        }
+                                        /* pseudo selector */
+                                        a:visited{
+                                                               color: red;
+                                        }
+                                        a:link{
+                                          color:yellow
+                                        }
+                                        a:hover{
+                                          color:blue;
+                                          background: greenyellow;
+                                        }
+                                        p:first-child{
+                                          color: aqua;
+                                          background: orange;
+                                        }
+
+                    </style>
+</head>
+<body>
+       <div class="one">
+             <p>I am one</p>
+             <p>I am second</p>
+       </div>
+             <div>
+                    Hii, I am div
+             </div>       
+             <div class="red"> I am a div </div>
+
+             <div id="green">Hii , I am another div
+              <p>This is a paragraph inside the green div.</p> 
+              <article><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam sit, architecto quo optio rem exercitationem voluptatum? Accusamus expedita, voluptates aut consequatur iure sequi, repellat maxime hic, earum corrupti aliquam sed.</p></article>
+
+
+       </div>
+       <a href="https://google.com">go to google</a>
+       <a href="https://facebook.com">go to facebook</a>
+</body>
+</html>

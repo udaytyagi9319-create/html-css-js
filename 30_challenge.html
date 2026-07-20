@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Challenge</title>
+                    <style>
+                                        .container{
+                                                            background-color: blue;
+                                                            height:50vh;
+                                                            width: 40vw;
+                                                            position: relative;
+
+                                        }
+                                        .ball{
+                                                            background-color: red;
+                                                            height:5vh;
+                                                            width:4vw;
+                                                            border-radius:60% ;
+                                                            position: absolute;
+                                                            animation: move 2s ease-in-out 2s 1;
+                                        }
+                                        @keyframes move {
+                                                            from{
+                                                                                transform: translateY(0);
+                                                            }
+                                                            to{
+                                                                                transform: translateY(350px);
+                                                            }
+                                                            
+                                        }
+                    </style>
+</head>
+<body>
+                    <div class="container">
+                                        <div class="ball"></div>
+                    </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Nav_bar</title>
+                    <style>
+                                        :root {
+                                                            --color: rgb(21, 9, 243);
+                                                            --secolor: rgb(14, 186, 253);
+                                                            --defhie: 100%;
+                                                            --demar: 20px;
+                                                            --depad: 20px;
+
+                                        }
+
+                                        * {
+                                                            margin: 0;
+                                                            padding: 0;
+                                                            box-sizing: border-box;
+                                        }
+
+                                        .container {
+                                                            border: 2px solid var(--secolor);
+                                                            background-color: var(--secolor);
+                                                            margin: 12px;
+                                                            border-radius: 22px;
+
+                                        }
+
+                                        .box1 {
+                                                            background: linear-gradient(to right, red, rgb(83, 193, 213));
+                                                            height: 100%;
+                                                            padding: var(--depad);
+                                                            /* display: flex; */
+                                                            border-radius: 22px;
+                                                            position: sticky;
+                                                            top: 0px;
+
+                                        }
+
+                                        a {
+                                                            text-decoration: none;
+                                                            margin: 15px;
+                                                            padding: 7px;
+                                                            position: relative;
+                                                            left: 0px;
+                                                            /* height: 23px; */
+                                                            font-size: large;
+                                                            border-radius: 22px;
+                                                            position: relative;
+                                                            top: 12px;
+                                                            font-weight: bold;
+                                                            color: white;
+                                                            background: var(--color);
+                                                            border: 2px solid rgb(79, 86, 228);
+
+                                        }
+
+                                        select {
+                                                            background: rgb(0, 47, 255);
+                                                            color: white;
+                                                            position: relative;
+                                                            left: 15px;
+                                                            padding: 10px;
+                                                            border-radius: 22px;
+                                                            /* top:10px; */
+                                                            font-weight: bold;
+                                                            border: 2px solid rgb(228, 79, 79);
+                                                            top: 12px;
+                                        }
+
+                                        h1 {
+                                                            position: relative;
+                                                            bottom: 15px;
+                                                            color: aliceblue;
+                                                            
+
+
+
+                                        }
+
+                                        .box input {
+                                                            position: relative;
+                                                            border: 2px solid black;
+                                                            padding: 5px;
+                                                            margin: 20px;
+                                                            border-radius: 22px;
+                                                            left: 45%;
+                                                            top: 12px;
+                                                            font-weight: bold;
+
+
+
+                                        }
+
+                                        .box2 {
+                                                            ---color: white;
+                                                            ---secolor: linear-gradient(to bottom, rgb(71, 192, 240), grey);
+                                                            text-align: center;
+                                                            padding: var(--depad);
+                                                            background: var(---secolor);
+                                                            color: var(---color);
+                                        }
+
+                                        .Button {
+                                                            ---color: white;
+                                                            --secolor1: green;
+                                                            padding: 10px;
+                                                            background: var(--secolor1);
+                                                            color: var(---color);
+                                                            border-radius: 22px;
+                                                            margin: var(--demar);
+                                        }
+
+                                        h1:hover {
+                                                            background: greenyellow;
+                                                            color: rgb(0, 0, 0);
+                                                            transition: all 0.5s ease;
+                                        }
+
+                                        input:hover {
+                                                            ----color: rgb(255, 7, 7);
+                                                            ----secolor: rgb(227, 213, 213);
+                                                            background: var(----secolor);
+                                                            color: var(----color);
+                                                            border: 2px solid red;
+
+                                        }
+
+                                        a:hover {
+                                                            --secolor0: rgb(255, 0, 0);
+                                                            --color0: white;
+                                                            color: var(--color0);
+                                                            background: var(--secolor0);
+                                                            transition: all 0.5s ease;
+                                        }
+
+                                        select:hover {
+                                                            --secolor0: rgb(255, 0, 4);
+                                                            --color0: white;
+                                                            color: var(--color0);
+                                                            background: var(--secolor0);
+                                                            transition: all 0.5s ease;
+                                                            border: 2px solid rgb(17, 0, 255);
+                                        }
+
+                                        .box2:hover {
+                                                            background: yellow;
+                                                            color: red;
+                                                             transition: all 0.5s ease;
+                                        }
+
+                                        button:hover {
+                                                            --secolor0: rgb(0, 255, 26);
+                                                            --color0: #fef9f8;
+                                                            color: var(--color0);
+                                                            background: var(--secolor0);
+                                                            transition: all 0.5s ease;
+                                                            border: 2px solid rgb(0, 255, 17);
+                                        }
+                    </style>
+</head>
+
+<body>
+                    <div class="container">
+                                        <div class="box box1">
+                                                            <h1>Company</h1>
+                                                            <a href="15_challenge_2.html">Home</a>
+                                                            <a href="06__challenge_1.html">About</a>
+                                                            <select name="search" id="box">
+                                                                                <option value="Contact">Contact</option>
+                                                                                <option value="Contact">9378254106
+                                                                                </option>
+                                                                                <option value="Contact">8755148190
+                                                                                </option>
+                                                            </select>
+
+                                                            <label for="search"></label>
+                                                            <input type="text" id="search" name="search"
+                                                                                placeholder="search">
+
+
+                                        </div>
+                                        <div class="box box2"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Provident laborum quo at eaque quidem repellat earum
+                                                            expedita, modi aperiam excepturi saepe, vero laboriosam
+                                                            totam nostrum repudiandae praesentium nulla repellendus.
+                                                            Accusamus dignissimos corporis illum consequatur quas
+                                                            laboriosam, at quis, non eveniet recusandae deleniti, ipsum
+                                                            fuga. Cumque facere mollitia fugiat, reiciendis consequatur
+                                                            ex itaque, esse eum non dolorum, eveniet consequuntur ab
+                                                            libero. Numquam expedita amet ut aliquam excepturi sapiente
+                                                            distinctio, delectus fuga fugiat ab. Molestiae pariatur
+                                                            totam autem mollitia ipsa. Doloremque reiciendis blanditiis,
+                                                            dolorum nisi perferendis distinctio voluptas, natus
+                                                            quibusdam nihil dolores nobis fuga! In cupiditate a ratione
+                                                            debitis eaque! Aliquam molestiae accusamus quas culpa iste
+                                                            nisi fuga mollitia veniam. Deserunt autem et odit possimus
+                                                            doloribus nam molestiae numquam? Et, facere voluptatibus
+                                                            ipsa labore mollitia dolorem quibusdam quo doloribus
+                                                            deleniti recusandae beatae eius suscipit, ratione earum
+                                                            magni porro ducimus aut. Quae, deleniti reiciendis officia
+                                                            aperiam quaerat obcaecati placeat sed velit nulla accusamus
+                                                            totam, sint adipisci culpa sunt aut recusandae. Eos impedit
+                                                            tempore voluptatibus eaque porro asperiores quas magnam
+                                                            esse, praesentium repudiandae expedita obcaecati, inventore
+                                                            fugit minus voluptates libero, autem omnis? Consectetur
+                                                            animi expedita totam alias quo eum nisi molestias. Iusto
+                                                            reiciendis rem doloribus dolore debitis labore quisquam
+                                                            rerum beatae praesentium, fugit amet modi. At neque,
+                                                            pariatur eum distinctio illo libero tempora voluptatem fuga
+                                                            iusto quidem, quam rem blanditiis! Sapiente velit voluptas
+                                                            saepe rerum nam asperiores eius quaerat nobis quo
+                                                            consequatur optio, laudantium dolores odio rem eaque
+                                                            repudiandae quidem? Nihil totam repudiandae debitis
+                                                            quisquam, magni fuga aspernatur necessitatibus harum
+                                                            dolorem, non dolores possimus! Cumque, laboriosam. Quod
+                                                            doloremque assumenda quidem modi voluptatem ad architecto.
+                                                            Consequatur, cupiditate assumenda non corporis incidunt
+                                                            obcaecati tempore nulla atque vitae facere culpa quidem odio
+                                                            officiis optio amet ut doloremque, nemo voluptatum rem iure
+                                                            hic neque fugit iste nam? Nostrum ipsum commodi nihil
+                                                            distinctio modi, velit dicta cum suscipit asperiores omnis
+                                                            necessitatibus blanditiis consequuntur architecto molestiae
+                                                            nesciunt deleniti voluptatem consequatur, officia delectus
+                                                            vero possimus enim illum. Natus magni nulla sunt nisi
+                                                            incidunt sequi ipsam voluptate quam repellat, perferendis
+                                                            quis aliquam provident, laudantium itaque, quas velit
+                                                            deleniti accusantium ipsa dolorem consequuntur sapiente
+                                                            minus? Necessitatibus nesciunt, molestias asperiores
+                                                            provident dolor sequi ullam. Porro libero ab iste maxime?
+                                                            Neque doloremque quod distinctio atque sed dolores aut
+                                                            reiciendis maiores qui, explicabo maxime! Ex perspiciatis
+                                                            quae atque? Aperiam voluptate aspernatur dolorum aliquam
+                                                            enim corrupti magnam culpa, perferendis, cumque maxime aut
+                                                            dolores explicabo earum, in cum. Eius vel maiores laborum
+                                                            placeat voluptatem laboriosam similique provident, amet illo
+                                                            saepe praesentium facilis aliquid nemo sint, non temporibus
+                                                            alias in, magnam rem? Debitis ut est veritatis accusantium
+                                                            facere ea amet odio ducimus error vero quaerat, mollitia
+                                                            natus corrupti ex quod doloremque nobis. Magni numquam
+                                                            commodi, distinctio nemo aliquam et minima! Illum ex harum
+                                                            quod rerum magnam vitae cum vel. Lorem ipsum dolor sit amet
+                                                            consectetur adipisicing elit. Esse, error! Ea totam quod
+                                                            voluptas autem quasi doloribus, a debitis amet cumque at
+                                                            soluta minus laborum rerum quae nulla asperiores officia
+                                                            necessitatibus aspernatur, optio odio tenetur, nostrum
+                                                            reprehenderit consequatur natus. Distinctio, voluptas
+                                                            voluptatem. Odio, odit magnam. Voluptatum quas officia
+                                                            recusandae nihil? Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing elit. Eos ratione nihil assumenda esse nemo
+                                                            veritatis itaque eveniet quia. Blanditiis hic in ipsam ipsum
+                                                            aut, molestiae delectus qui facilis vel eos nulla unde!
+                                                            Autem aspernatur sint veritatis quas molestiae neque
+                                                            blanditiis beatae iste, at optio magnam sequi nobis tempore
+                                                            commodi recusandae temporibus a? Minus voluptatum
+                                                            repellendus unde maxime molestias nam culpa amet repudiandae
+                                                            numquam. Ipsum, delectus. Ullam, illo, asperiores tenetur ad
+                                                            libero temporibus doloremque sint quos error quia enim nemo
+                                                            cumque, eum magnam laboriosam voluptatum voluptate? Omnis,
+                                                            animi. Est pariatur soluta asperiores eum sunt, libero quo
+                                                            distinctio natus, officiis aliquid minima.<div>
+                                                                                <button class="Button">Read
+                                                                                                    more</button>
+                                                            </div>
+                                        </div>
+
+</body>
+
+</html>

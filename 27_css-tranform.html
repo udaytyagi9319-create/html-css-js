@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS Transform</title>
+                    <style>
+.box{
+                    height:50px;
+                    width:50px;
+                    background-color: rgb(242, 242, 3);
+                    border:2px solid black;
+                    /*transform:rotate(0.125turn); /*ise ham transform me rotate karte hai , lekin vo nech se uppar or uppar se nech ki or rotate hota hai..  */
+                    /*transform:rotatex(45deg);/*ise ham transform me rotate karte hai, lekin vo disha ki or rotate hota hai...*/
+                    display:flex;
+                    justify-content:center;
+                    align-items: center;
+                    transform-origin:50% 50% ;/*ise ham box ki place ko define kar skate hai jo ye bata hai upar le ja sakte or neche la sakte hai...*/
+                    /*transform: scale(1.0);/*ise ham box ko bada kar sakte hai....*/
+                    /*transform: scalex(1.6);/*ise ham box ko side se bada kar sakte hai.... */
+                    /*transform: scaley(1.6);/*ise ham box ko upar se bada kar sakte hai.... */
+                    /*transform: skew(10deg);/*isme ham box ke ek corne se khij te hai ek trhe se tricha ho jata hai.. */
+                    /*transform:skewx(7deg);/*same hi hai*/
+                    /*transform: skewY(7deg);/*isme dusre angal se khijte hai mtlb ki vo dusre or ko jhuk jata hai....*/
+                    /* transform: translatey(100%) skew(30deg) translateX(100%);translate ka use kare ham box ko khiska sakte hai...or ise ham teen property ek sath use kar sakte hai. */
+
+
+
+}
+.container{ 
+                    height:100vw;
+                    width:80vh;
+                    border:2px solid purple;
+
+}
+                    </style>
+</head>
+<body>
+             <div class="container">
+                    <div class="box">Box</div>
+             </div>       
+</body>
+</html>

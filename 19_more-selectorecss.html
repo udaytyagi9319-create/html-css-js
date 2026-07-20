@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>More on CSS selectors</title>
+                    <style>
+                                        /* .box:first-child{
+                                                            background:red;
+                                                            color:white;
+
+                                        } *//* == ise ham jo boxes ke ander jo first box hai  uska background color red ho jata hai, or ise or bhi property add kar sakte hai  */
+
+                                        /* .box::first-line{
+                                                            color:red;
+                                                            background: yellow;
+                                                            
+                                         } *//* == isme ham container ke box ki first line ka color ya background color change kar sakte hai, */
+
+                                        /* .boxes *{
+                                                            background: aqua;
+                                                            border: 2px solid rgb(55, 0, 255);
+                                         } */ /* == isme ham universal selector ke sath boxes ko use karke sabhi box ko design kar sakte hai.*/
+
+
+                                          /*box,[data-color="primary"]{
+                                                            margin-top: 40px;
+                                                            padding:20px;
+                                                            color: red;
+                                         } */ /* == isme de kar ham kis ek ko bhi design kar sakte hai.. */
+
+
+                                        /* .box:nth-child(even) {
+                                                            background: yellowgreen;
+                                        } */ /* == isme age kis bhi child ka number even jaise (2) number par hoga use bg color yellowgreen ho jayga. */
+
+                                        /* .box:nth-child(3){
+                                                            background: yellowgreen;
+                                        } */ /* == isme ham apne box/child ka number deg kar use design kar sakte hai..*/
+
+                                         /* .box:nth-last-child(1){
+                                                            background:purple;
+                                                            color:rgb(239, 244, 244);
+
+                                         } *//* == isme ham kis child ko niche design kar sakte matlab ki ulte number se  3,2,1 aise karke..*/
+
+                                          /* .boxes::before{
+                                                            content: "Hello guys"; 
+                                                            
+                                                            color:rgb(9, 10, 10);
+                                                            background:red;
+                                          }*/ /* == isme ham koi content add kar sakte hai or usko design bhi kar sakte hai */
+
+                                          /*.boxes::after{
+                                                            content: "Bye guys";
+                                          }*//* == ise text ko ham last me add kar sakte hai*/
+                                          
+                                          /*::selection{
+                                                            color:rgb(255, 0, 0);
+                                                            background: #000;
+                                          }*//* == isme ham  jab text ko select karte hai to uska color change kar sakte hai...*/
+
+                                          /*.box::first-letter{
+                                                            color:red;
+                                                            background: yellow;
+                                                            font-size: 45px;
+                                          }*//* == isme ham box ke ander ke text ke first letter ko design kar sakte hai*/
+
+                                          /*input::placeholder{
+                                                            background: yellow;
+                                                            color:black;
+                                                            
+                                                            
+                                          }*//* == ise ham input tag ke placeholder ko target kar sakte hai,usko design de sakte hai... */
+                                          
+                    </style>
+
+</head>
+
+<body>
+                    <div class="boxes">
+                                        <div data-color="primary" class="box">Hey , i am box</div>
+                                        <div class="box">Hey , i am box</div>
+                                        <div class="box">Hey , i am box</div>
+                                        <input type="text" placeholder="enter your name">
+                    </div>
+</body>
+
+</html>

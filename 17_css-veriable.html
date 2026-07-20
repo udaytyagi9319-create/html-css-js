@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>CSS-veriables</title>
+                    <style>
+                                        :root{
+                                                            --color: rgb(242, 255, 0);
+                                                            --secolor:rgb(166, 49, 49);
+                                                            --defpad:35px;
+                                                            --defop: 0.4;
+                                                            --defmar:20px;
+                                                            
+
+                                        }
+                                        * {
+                                                            margin: 0px;
+                                                            padding: 0px;
+                                        }
+
+                                        .nav {
+                                                            background: var(--color);
+                                                            /* background: var(--color,blue); */
+                                        }
+                                        
+                                        ul{
+                                                            display: flex;
+                                        }
+
+                                        ul li:first-child{
+                                                            --color: rgb(33, 234, 43);
+                                                            background: var(--color,blue);
+                                                            
+                                        }
+
+                                        ul li {
+                                                            opacity: var(--defop);
+                                                            list-style: none;
+                                                            padding: var(--defpad);
+                                                            border: 2px solid var(--secolor);
+                                        }
+                                        
+                                        .container{
+                                                            background:var(--secolor);
+                                                            color:var(---color,white);
+                                        }
+                    </style>
+</head>
+
+<body>
+                    <div class="nav">
+                                        <ul>
+                                                            <li>Home</li>
+                                                            <li>About</li>
+                                                            <li>Contact</li>
+                                        </ul>
+                    </div>
+                    <div class="container">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores beatae dolor
+                                        nemo illo fuga deleniti laborum adipisci, quisquam, autem soluta totam
+                                        consectetur eos dolores vel provident! Quasi, expedita. Mollitia incidunt
+                                        tempore iure repellat ut doloremque non repellendus, voluptate corrupti, impedit
+                                        nobis sequi officiis quasi? Libero eaque reprehenderit quidem dolore repellat?
+                    </div>
+</body>
+
+</html>
